@@ -1,0 +1,15 @@
+declared-services:
+  conversation-service:
+    label: conversation
+    plan: free
+  alchemy-service:
+      label: alchemy_api
+      plan: free
+applications:
+- services:
+   - conversation-service
+   - alchemy-language-service
+  name: hackdavisv3
+  command: npm start
+  path: .
+  memory: 512M
